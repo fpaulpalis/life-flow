@@ -1,0 +1,85 @@
+/* admin_login.css */
+
+/* Overall page styling */
+body {
+    background-color: #630e0e; /* Dark, bloodlike background */
+    color: #fae5e5;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Centered form container */
+form {
+    width: 400px;              /* Adjust as needed */
+    margin: 2rem auto;         /* Centers the form horizontally, 2rem top/bottom */
+    background-color: #550000; /* Lighter red form background */
+    border: 2px solid #fff;    /* White border */
+    border-radius: 0.5rem;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Heading above the form */
+h2 {
+    text-align: center;
+    margin-top: 8rem;  /* Place it further down the page */
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+h1{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+    font-size: 5rem;
+}
+
+/* Error messages, if any */
+form p {
+    margin-bottom: 1rem;
+}
+
+/* Text fields (username, password, email) */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+    width: 90%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Submit button (Login, Create Admin) */
+form input[type="submit"],
+form button[type="submit"] {
+    background-color: #fff;
+    color: #550000;
+    border: 2px solid #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover effect for the submit button */
+form input[type="submit"]:hover,
+form button[type="submit"]:hover {
+    background-color: #ffcccc; /* Light pinkish red */
+    color: #330000;
+}
+
+/* (Optional) Hide raw <br> from admin_register form if you like */
+form input[type="text"] + br,
+form input[type="email"] + br,
+form input[type="password"] + br {
+    display: none;
+}

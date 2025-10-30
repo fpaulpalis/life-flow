@@ -1,0 +1,114 @@
+/* admin.css */
+
+/* 1) Basic Page Setup */
+body {
+    background: #330000; /* Dark background */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 2) Container for page content */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* 3) Navbar */
+.navbar {
+    background: #630e0e; /* Lighter red for navbar */
+    padding: 1rem;
+    width: 97.5%;
+    /* Use Flexbox to space items left & right */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 4) Logo */
+.logo img {
+    height: 50px; /* Adjust as needed */
+    /* width: 120px; if you prefer a fixed width */
+}
+
+/* 5) .button Class (for links like Create Admin, Remove, Logout) */
+.button {
+    display: inline-block;
+    background-color: #fff;   /* White background */
+    color: #550000;          /* Red text */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+    border: 2px solid #fff;  /* White border (optional) */
+}
+
+/* Hover effect for .button */
+.button:hover {
+    background-color: #c01c1c; /* Reddish on hover */
+    color: #330000;
+    text-decoration: none;
+}
+
+/* If you want the .button to appear as an actual button element inside <a> */
+.nav-right a.button button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* 6) Nav-Right (where Logout is) */
+.nav-right {
+    /* Also use flex here, so items line up horizontally on the right */
+    display: inline;
+    align-items: center;
+    justify-content: flex-end; 
+
+}
+
+.nav-right .button {
+    margin-left: 1rem; /* Spacing between buttons/links */
+}
+
+/* 7) Headings */
+h1 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+/* 8) Table for Manage Users */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+table, th, td {
+    border: 1px solid #fff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* 9) Optional: Additional styling for <a> links inside table if needed */
+table a.button {
+    margin: 0; /* So the 'Remove' link doesn't get extra margin */
+}
+
+/* 10) Adjust spacing around main content */
+.container h1, .container h2 {
+    margin-left: 0;
+    margin-right: 0;
+    /* Keep them in normal flow inside .container */
+}
